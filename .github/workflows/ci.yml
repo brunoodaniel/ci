@@ -9,7 +9,7 @@ on:
 # Define os "trabalhos" (jobs) que o pipeline executará
 jobs:
   # O nome do nosso job é "test-and-build"
-  test-and-build:
+  test-and-build: 
     # A máquina virtual que o job usará
     runs-on: ubuntu-latest
     permissions:
