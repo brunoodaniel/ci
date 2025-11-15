@@ -34,8 +34,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/brunoodaniel/CI:latest
-            ghcr.io/brunoodaniel/CI:${{ github.sha }}
+            ghcr.io/brunoodaniel/ci:latest
+            ghcr.io/brunoodaniel/ci:${{ github.sha }}
   deploy-to-local:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: test-and-build
